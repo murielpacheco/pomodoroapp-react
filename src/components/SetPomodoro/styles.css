@@ -1,0 +1,42 @@
+
+input {
+  height: 30px;
+  width: 90px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(46, 46, 116);
+  outline: none;
+  border: none;
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: 'digital-clock-font';
+  color: white;
+}
+
+input:hover {
+  opacity: 0.9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 14px;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  margin-bottom: 22px;
+}
+
+.input-wrapper div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 1rem;
+}

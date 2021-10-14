@@ -38,7 +38,7 @@ const App = () => {
             </li>
             <li>
               <Button
-                title='Short Break'
+                title='Short'
                 activeClass={
                   executing.active === 'short' ? 'active-label' : undefined
                 }
@@ -47,7 +47,7 @@ const App = () => {
             </li>
             <li>
               <Button
-                title='Long Break'
+                title='Long'
                 activeClass={
                   executing.active === 'long' ? 'active-label' : undefined
                 }

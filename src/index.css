@@ -1,30 +1,36 @@
 @font-face {
   font-family: 'digital-clock-font';
-  src: url('./fonts/digital-7\ \(mono\).ttf');
+  src: url("./fonts/digital-7 (mono).ttf");
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .container {
   color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100vh;
-  background: rgb(255, 255, 255);
+  background: white;
 }
 
 .container h1 {
@@ -34,6 +40,8 @@ code {
 
 .container .labels {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-transform: uppercase;
   font-size: 0.8rem;
@@ -47,30 +55,51 @@ code {
 }
 
 .timer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex: 2;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .time-wrapper {
   color: #a3eedb;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 22rem;
   width: 22rem;
   border-radius: 11rem;
   background: #18181a;
   font-size: 5rem;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
   font-family: 'digital-clock-font';
 }
 
 .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 2rem;
 }
 
@@ -79,6 +108,8 @@ button {
   font-size: 0.8rem;
   padding: 0.5rem 1.2rem;
   border: none;
+  width: 100px;
+  height: 40px;
   border-radius: 3rem;
   margin: 0.2rem;
   background: #18181a;
@@ -86,17 +117,25 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
 .button-wrapper button.activve {
   color: #18181a;
   background-color: #c9eaea;
   border: 1px solid #0c0e1b;
 }
+
 .form-container {
   text-align: center;
 }
+
 .input-wrapper {
   margin: 1.5rem;
 }
+
 .input-wrapper input {
   height: 70px;
   width: 150px;
@@ -115,3 +154,4 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+/*# sourceMappingURL=index.css.map */

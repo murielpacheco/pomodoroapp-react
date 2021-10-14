@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'digital-clock-font';
+  src: url('./fonts/digital-7\ \(mono\).ttf');
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container {
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(255, 255, 255);
+}
+
+.container h1 {
+  font-size: 2.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.container .labels {
+  list-style: none;
+  display: flex;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.3rem;
+  border-radius: 1.5rem;
+}
+
+.active-label {
+  color: #0c0e1b;
+  background-color: #00ffbf;
+}
+
+.timer-container {
+  display: flex;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-wrapper {
+  color: #a3eedb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 22rem;
+  width: 22rem;
+  border-radius: 11rem;
+  background: #18181a;
+  font-size: 5rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  font-family: 'digital-clock-font';
+}
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+button {
+  color: #84858f;
+  font-size: 0.8rem;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 3rem;
+  margin: 0.2rem;
+  background: #18181a;
+  min-width: 80px;
+  cursor: pointer;
+
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+.button-wrapper button.activve {
+  color: #18181a;
+  background-color: #c9eaea;
+  border: 1px solid #0c0e1b;
+}
+.form-container {
+  text-align: center;
+}
+.input-wrapper {
+  margin: 1.5rem;
+}
+.input-wrapper input {
+  height: 70px;
+  width: 150px;
+  color: #00ffbf;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  margin-right: 0.3rem;
+  text-align: center;
+  font-size: 2.7rem;
+  font-family: 'digital-clock-font';
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

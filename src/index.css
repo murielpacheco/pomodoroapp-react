@@ -30,7 +30,7 @@ code {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
-  background: white;
+  background: #efefef;
 }
 
 .container h1 {
@@ -140,6 +140,7 @@ button:hover {
   height: 70px;
   width: 150px;
   color: #00ffbf;
+  background-color: #efefef;
   border: none;
   border-bottom: 2px solid #ccc;
   outline: none;

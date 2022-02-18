@@ -42,6 +42,7 @@ const SetPomodoro = () => {
   };
   return (
     <div className='form-container'>
+      <h1>Pomodoro Timer</h1>
       <form noValidate onSubmit={handleSubmit}>
         <div className='input-wrapper'>
           <input

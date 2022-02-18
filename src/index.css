@@ -80,8 +80,8 @@ code {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 22rem;
-  width: 22rem;
+  height: 20rem;
+  width: 20rem;
   border-radius: 11rem;
   background: #18181a;
   font-size: 5rem;

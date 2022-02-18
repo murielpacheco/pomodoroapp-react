@@ -23,7 +23,6 @@ const App = () => {
 
   return (
     <div className='container'>
-      <h1>Pomodoro Timer</h1>
       {pomodoro !== 0 ? (
         <>
           <ul className='labels'>

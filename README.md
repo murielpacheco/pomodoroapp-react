@@ -1,23 +1,14 @@
-# Getting Started with Create React App
+# Clone Pomodoro App - React
 
 ## Demonstração
 
 ![gif](github/pomodoro.gif)
 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tecnologias Usadas
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn`
-To install all dependencies to run the app on your browser (creating node_modules)
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  - React.js
+    - React Hooks
+    - Context API
+  - React Countdown Circle Timer (lib)
+  - Github pages (deploy)
